@@ -112,7 +112,7 @@ MyString MyString::substring(int start, int len) const {
     if (start < 0 || start >= static_cast<int>(data_length())){
         throw out_of_range("start index out of range in substring");
     }
-    return MyString(data.substr(start, len))
+    return MyString(data.substr(start, len));
 }
 
 // ---- String Manipulation ----
